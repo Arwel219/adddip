@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Orari Lavoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">
+        Gestione Orari di Lavoro Settimanali 
+        <span id="giorniSettimana"></span>
+    </h1>
+
+    <div>
+        <label for="nomeDipendente">Nome Dipendente: </label>
+        <input type="text" id="nomeDipendente" placeholder="Inserisci nome dipendente">
+        
+        <button onclick="aggiungiDipendente()">Aggiungi Dipendente</button>
+    </div>
+
+    <h2>Orari Settimanali</h2>
+    <p id="settimana-info">Settimana dal <span id="inizio-settimana"></span> al <span id="fine-settimana"></span> di <span id="mese-anno"></span></p>
+    <table id="tabellaOrari">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="memorizzaDati()">Memorizza Dati</button>
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>

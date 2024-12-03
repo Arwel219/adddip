@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizzazione Orari di Lavoro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">Orari di Lavoro Settimanali</h1>
+
+    <h2>Tabella degli Orari</h2>
+    <table id="tabellaOrari">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="window.location.href = 'index.html';">Torna alla pagina principale</button>
+</div>
+
+<script>
+    function caricaDati() {
+        const dipendenti = JSON.parse(localStorage.getItem("dipendenti"));
+        if (!dipendenti) {
+            document.querySelector("tbody").innerHTML = "<tr><td colspan='8'>Nessun dato disponibile.</td></tr>";
+            return;
+        }
+
+        const tabella = document.getElementById("tabellaOrari").getElementsByTagName('tbody')[0];
+        tabella.innerHTML = "";  // Pulisce la tabella
+
+        dipendenti.forEach(dipendente => {
+            const row = tabella.insertRow();
+
+            let cell = row.insertCell(0);
+            cell.textContent = dipendente.nome;
+
+            // Crea le celle per ogni giorno della settimana
+            dipendente.orari.forEach(orario => {
+                cell = row.insertCell();
+                cell.textContent = orario.charAt(0).toUpperCase() + orario.slice(1);  // Capitalizza il primo carattere
+            });
+        });
+    }
+
+    caricaDati();
+</script>
+
+</body>
+</html>
