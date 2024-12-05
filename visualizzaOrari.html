@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizzazione Orari di Lavoro</title>
+    <p id="settimana-info">Settimana dal <span id="inizio-settimana"></span> al <span id="fine-settimana"></span> di <span id="mese-anno"></span></p>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -63,33 +64,7 @@
     <button onclick="window.location.href = 'index.html';">Torna alla pagina principale</button>
 </div>
 
-<script>
-    function caricaDati() {
-        const dipendenti = JSON.parse(localStorage.getItem("dipendenti"));
-        if (!dipendenti) {
-            document.querySelector("tbody").innerHTML = "<tr><td colspan='8'>Nessun dato disponibile.</td></tr>";
-            return;
-        }
-
-        const tabella = document.getElementById("tabellaOrari").getElementsByTagName('tbody')[0];
-        tabella.innerHTML = "";  // Pulisce la tabella
-
-        dipendenti.forEach(dipendente => {
-            const row = tabella.insertRow();
-
-            let cell = row.insertCell(0);
-            cell.textContent = dipendente.nome;
-
-            // Crea le celle per ogni giorno della settimana
-            dipendente.orari.forEach(orario => {
-                cell = row.insertCell();
-                cell.textContent = orario.charAt(0).toUpperCase() + orario.slice(1);  // Capitalizza il primo carattere
-            });
-        });
-    }
-
-    caricaDati();
-</script>
+<script src="script1.js"></script>
 
 </body>
 </html>
