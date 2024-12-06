@@ -75,6 +75,9 @@ table {
     margin-top: 30px;
     border-collapse: collapse;
     text-align: center;
+    overflow-x: auto; /* Aggiunto per permettere lo scorrimento orizzontale */
+    display: block; /* Cambiato per abilitare lo scorrimento */
+    white-space: nowrap; /* Impedisce la rottura delle righe */
 }
 
 th, td {
@@ -150,7 +153,7 @@ td:hover {
     }
 }
 
-/* Ulteriore responsività per schermi più piccoli, come i dispositivi mobili */
+/* Responsività per schermi molto piccoli, come i dispositivi mobili */
 @media screen and (max-width: 768px) {
     body {
         width: 100%;
@@ -171,6 +174,9 @@ td:hover {
     table {
         width: 100%;
         font-size: 0.9rem;
+        display: block; /* Rende la tabella scrollabile orizzontalmente */
+        overflow-x: auto; /* Aggiunge il supporto per lo scorrimento orizzontale */
+        -webkit-overflow-scrolling: touch; /* Aggiunta per il miglioramento su dispositivi iOS */
     }
 
     th, td {
