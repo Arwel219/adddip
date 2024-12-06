@@ -1,1 +1,1 @@
-# adddip
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c4c8ac9-be95-4745-84c8-7114cfc53cde/deploy-status)](https://app.netlify.com/sites/orari-dipendenti/deploys)
