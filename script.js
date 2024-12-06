@@ -206,7 +206,17 @@ function eliminaDipendente(index) {
             }
         });
 
-		
+	
+// Aggiungi la classe 'selected' alla cella quando viene cliccata
+document.querySelectorAll("td").forEach(cell => {
+    cell.addEventListener("click", function() {
+        // Toglia la selezione dalle altre celle
+        document.querySelectorAll("td").forEach(c => c.classList.remove("selected"));
+        // Aggiungi la classe 'selected' alla cella cliccata
+        this.classList.add("selected");
+    });
+});
+        
     // Ottieni la data attuale
 
     var dataAttuale = new Date();
