@@ -97,21 +97,22 @@ td:hover {
     background-color: #e9f7e9;
 }
 
-    #resetButton {
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      padding: 10px 20px;
-      background-color: #f44336;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+#resetButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+}
 
-    #resetButton:hover {
-      background-color: #d32f2f;
-    }
+#resetButton:hover {
+    background-color: #d32f2f;
+}
 
 /* Sezione del messaggio di memorizzazione dei dati */
 #memorizzazione-message {
@@ -122,7 +123,7 @@ td:hover {
 }
 
 /* Responsività per schermi più piccoli */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     body {
         width: 100%;
     }
@@ -132,18 +133,71 @@ td:hover {
     }
 
     .header {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     input, button {
-        width: 10%;
+        width: 100%;
     }
-	
+
     table {
-        width: 65%;
+        width: 100%;
+        font-size: 0.9rem;
     }
 
     th, td {
         padding: 10px;
+    }
+}
+
+/* Ulteriore responsività per schermi più piccoli, come i dispositivi mobili */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Bottone reset più grande sui dispositivi mobili */
+    #resetButton {
+        width: 30%;
+    }
+}
+
+/* Ulteriore responsività per schermi molto piccoli, come i telefoni */
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    #resetButton {
+        width: 40%;
     }
 }
