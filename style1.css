@@ -1,110 +1,130 @@
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        
-        .container {
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
 
-        .header {
-            text-align: center;
-        }
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
 
-        /* Tabella */
-        table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
-            overflow-x: auto; /* Abilita lo scorrimento orizzontale */
-            display: block;
-            white-space: nowrap;
-        }
+.header {
+    text-align: center;
+}
 
-        th, td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ccc;
-        }
+/* Tabella */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+}
 
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
 
-        td {
-            background-color: #f9f9f9;
-        }
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+}
 
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-        }
+td {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 5px;
+}
 
-        button:hover {
-            background-color: #45a049;
-        }
+td:hover {
+    background-color: #e2f7e2;  /* Leggero verde chiaro al passaggio del mouse */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Aggiungi un'ombra per evidenziare */
+}
 
-        /* Responsività per schermi più piccoli */
-        @media screen and (max-width: 1024px) {
-            .container {
-                padding: 15px;
-            }
+td:active {
+    background-color: #d3f5d3; /* Colore più scuro durante il clic */
+    transform: scale(0.98);  /* Leggero effetto di riduzione al clic */
+}
 
-            table {
-                width: 100%;
-                font-size: 0.9rem;
-            }
+td.selected {
+    background-color: #81C784;  /* Colore verde chiaro quando selezionato */
+    color: white;
+}
 
-            th, td {
-                padding: 8px;
-            }
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
 
-            button {
-                font-size: 0.9rem;
-                padding: 12px;
-            }
-        }
+button:hover {
+    background-color: #45a049;
+}
 
-        @media screen and (max-width: 768px) {
-            table {
-                width: 100%;
-                font-size: 0.8rem;
-            }
+/* Responsività per schermi più piccoli */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
 
-            th, td {
-                padding: 6px;
-            }
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
 
-            button {
-                font-size: 0.9rem;
-            }
-        }
+    th, td {
+        padding: 8px;
+    }
 
-        @media screen and (max-width: 480px) {
-            table {
-                font-size: 0.7rem;
-            }
+    button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
 
-            th, td {
-                padding: 5px;
-            }
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 0.8rem;
+    }
 
-            button {
-                font-size: 0.8rem;
-            }
-        }
+    th, td {
+        padding: 6px;
+    }
 
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        font-size: 0.7rem;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+}

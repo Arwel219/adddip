@@ -57,6 +57,13 @@ function aggiornaTabella(dipendenti) {
 
 }
 
+// Aggiungi la classe 'selected' alla cella quando viene cliccata
+document.querySelectorAll("td").forEach(cell => {
+    cell.addEventListener("click", function() {
+        this.classList.toggle("selected"); // Cambia la classe per selezionare o deselezionare
+    });
+});
+
     // Ottieni la data attuale
 
     var dataAttuale = new Date();
