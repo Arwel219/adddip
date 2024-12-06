@@ -123,6 +123,10 @@ td:hover {
 
 /* Responsività per schermi più piccoli */
 @media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
     .container {
         padding: 20px;
     }
@@ -132,7 +136,11 @@ td:hover {
     }
 
     input, button {
-        width: 100%;
+        width: 10%;
+    }
+	
+    table {
+        width: 65%;
     }
 
     th, td {
