@@ -216,6 +216,15 @@ document.querySelectorAll("td").forEach(cell => {
         this.classList.add("selected");
     });
 });
+
+// Aggiungi un event listener per aggiornare lo stato delle selezioni
+document.querySelectorAll('.scelta-giorno').forEach(select => {
+    select.addEventListener('change', function() {
+        const giorno = this.closest('td').textContent.trim();
+        const valoreSelezionato = this.value;
+        console.log(`Selezionato per ${giorno}: ${valoreSelezionato}`);
+    });
+});
         
     // Ottieni la data attuale
 

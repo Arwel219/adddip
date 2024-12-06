@@ -116,6 +116,1397 @@ td.selected {
     color: white;
     font-weight: bold;
 }
+
+Accedi
+
+Registrati
+Hai detto:
+ti inserisco un codice e rendimelo responsive
+ChatGPT ha detto:
+ChatGPT
+Certo! Inserisci pure il codice che desideri rendere responsive, e ti aiuterò a modificarlo.
+
+
+Hai detto:
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenitore principale */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Sezione del nome del dipendente */
+div {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+/* Bottone Aggiungi Dipendente */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tabella orari */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+td:hover {
+    background-color: #e9f7e9;
+}
+
+    #resetButton {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+	  width: 10%;
+    }
+
+    #resetButton:hover {
+      background-color: #d32f2f;
+    }
+
+/* Sezione del messaggio di memorizzazione dei dati */
+#memorizzazione-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+/* Responsività per schermi più piccoli */
+@media screen and (max-width: 768px) {
+	
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: 10%;
+    }
+	
+    table {
+        width: 65%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+ChatGPT ha detto:
+ChatGPT
+Per rendere il tuo codice CSS più responsive e adattabile a schermi di diverse dimensioni, ho modificato alcune delle tue regole e aggiunto ulteriori media query per dispositivi più piccoli, come smartphone e tablet. Ho anche corretto alcune impostazioni che potrebbero causare problemi, come la larghezza dei pulsanti e degli input.
+
+Ecco il codice CSS migliorato:
+
+css
+Copia codice
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenitore principale */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Sezione del nome del dipendente */
+div {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+/* Bottone Aggiungi Dipendente */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tabella orari */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+td:hover {
+    background-color: #e9f7e9;
+}
+
+#resetButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Sezione del messaggio di memorizzazione dei dati */
+#memorizzazione-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+/* Responsività per schermi più piccoli */
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Ulteriore responsività per schermi più piccoli, come i dispositivi mobili */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Bottone reset più grande sui dispositivi mobili */
+    #resetButton {
+        width: 30%;
+    }
+}
+
+/* Ulteriore responsività per schermi molto piccoli, come i telefoni */
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    #resetButton {
+        width: 40%;
+    }
+}
+Modifiche principali:
+Bottone e input responsivi: Ho corretto le larghezze di input e button, che sono ora al 100% della larghezza disponibile, adattandosi a schermi più piccoli.
+Dimensione dei font: La dimensione del font dell'header è stata ridotta per schermi più piccoli per migliorarne la leggibilità.
+Tabella: La tabella si adatta meglio ai dispositivi più piccoli, e ho ridotto il padding delle celle per evitare che il contenuto diventi troppo stretto.
+Bottone di reset: Il pulsante di reset cambia la sua larghezza su dispositivi mobili, passando dal 10% (come da tua richiesta iniziale) a circa il 30% su dispositivi più piccoli per essere facilmente cliccabile.
+Media query: Aggiunte media query per schermi con larghezza inferiore a 1024px, 768px e 480px per garantire che il design si adatti fluidamente a dispositivi di diverse dimensioni.
+Con queste modifiche, il layout dovrebbe adattarsi bene a diverse risoluzioni e dispositivi.
+
+
+Hai detto:
+la tabella dei dipendenti me la fa vedere troppo lunga sul telefono
+ChatGPT ha detto:
+ChatGPT
+Capisco il problema. Per risolverlo, possiamo rendere la tabella più compatibile con i dispositivi mobili applicando alcune modifiche. Una soluzione comune per gestire le tabelle su schermi piccoli è quella di rendere la tabella più compatta e permettere la visualizzazione su dispositivi mobili attraverso lo scorrimento orizzontale. Inoltre, possiamo modificare l'aspetto della tabella su schermi più piccoli, per non farla risultare troppo larga o difficile da leggere.
+
+Ecco una versione modificata del codice per gestire meglio la tabella sui dispositivi mobili:
+
+css
+Copia codice
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principale */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenitore principale */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Sezione del nome del dipendente */
+div {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+/* Bottone Aggiungi Dipendente */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tabella orari */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center;
+    overflow-x: auto; /* Aggiunto per permettere lo scorrimento orizzontale */
+    display: block; /* Cambiato per abilitare lo scorrimento */
+    white-space: nowrap; /* Impedisce la rottura delle righe */
+}
+
+th, td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td {
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+td:hover {
+    background-color: #e9f7e9;
+}
+
+#resetButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Sezione del messaggio di memorizzazione dei dati */
+#memorizzazione-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+/* Responsività per schermi più piccoli */
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Responsività per schermi molto piccoli, come i dispositivi mobili */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.5rem;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+        display: block; /* Rende la tabella scrollabile orizzontalmente */
+        overflow-x: auto; /* Aggiunge il supporto per lo scorrimento orizzontale */
+        -webkit-overflow-scrolling: touch; /* Aggiunta per il miglioramento su dispositivi iOS */
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    /* Bottone reset più grande sui dispositivi mobili */
+    #resetButton {
+        width: 30%;
+    }
+}
+
+/* Ulteriore responsività per schermi molto piccoli, come i telefoni */
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    #resetButton {
+        width: 40%;
+    }
+}
+Modifiche principali:
+Tabella scorrevole orizzontalmente sui dispositivi mobili: Ho aggiunto overflow-x: auto e white-space: nowrap alla tabella, che consente alla tabella di essere scrollata orizzontalmente quando il contenuto è troppo largo per il dispositivo. Inoltre, la tabella è stata impostata come display: block per permettere il comportamento di scorrimento.
+
+Flessibilità della tabella: La tabella ora si adatta meglio su schermi piccoli, consentendo all'utente di scorrere lateralmente (orizzontalmente) per visualizzare tutto il contenuto, invece di essere tagliata o troppo larga.
+
+Miglioramenti sui dispositivi iOS: La proprietà -webkit-overflow-scrolling: touch è stata aggiunta per migliorare l'esperienza di scorrimento orizzontale su dispositivi iOS.
+
+Con queste modifiche, la tabella dovrebbe comportarsi molto meglio sui dispositivi mobili, evitando che diventi troppo larga e offrendo un'esperienza utente più fluida con lo scorrimento orizzontale.
+
+
+Hai detto:
+fammelo pure su questo codice che ti invio
+ChatGPT ha detto:
+ChatGPT
+Certo! Puoi inviarmi il codice che desideri modificare, e provvederò a renderlo più responsive.
+
+
+Hai detto:
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizzazione Orari di Lavoro</title>
+    <p id="settimana-info">Settimana dal <span id="inizio-settimana"></span> al <span id="fine-settimana"></span> di <span id="mese-anno"></span></p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">Orari di Lavoro Settimanali</h1>
+
+    <h2>Tabella degli Orari</h2>
+    <table id="tabellaOrari">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="window.location.href = 'index.html';">Torna alla pagina principale</button>
+</div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
+ChatGPT ha detto:
+ChatGPT
+Per rendere la tua pagina HTML responsive, dobbiamo aggiungere alcune modifiche al CSS, in particolare per la tabella, così che si adatti meglio a schermi di diverse dimensioni (come smartphone e tablet). Aggiungerò anche una proprietà per permettere lo scorrimento orizzontale della tabella su dispositivi con schermi piccoli, evitando che diventi troppo larga.
+
+Ecco il codice HTML e CSS modificato per renderlo più responsive:
+
+html
+Copia codice
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizzazione Orari di Lavoro</title>
+    <p id="settimana-info">Settimana dal <span id="inizio-settimana"></span> al <span id="fine-settimana"></span> di <span id="mese-anno"></span></p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        /* Tabella */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            overflow-x: auto; /* Abilita lo scorrimento orizzontale */
+            display: block;
+            white-space: nowrap;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsività per schermi più piccoli */
+        @media screen and (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                width: 100%;
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            table {
+                font-size: 0.7rem;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+
+            button {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">Orari di Lavoro Settimanali</h1>
+
+    <h2>Tabella degli Orari</h2>
+    <table id="tabellaOrari">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="window.location.href = 'index.html';">Torna alla pagina principale</button>
+</div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
+Modifiche principali:
+Scorrimento orizzontale per la tabella: Ho aggiunto overflow-x: auto e white-space: nowrap alla tabella per consentire lo scorrimento orizzontale sui dispositivi con schermi piccoli. La tabella diventerà scorrevole orizzontalmente invece di "rompersi" o essere troppo larga per lo schermo.
+
+Media Query:
+
+Ho aggiunto media query per schermi con larghezza inferiore a 1024px, 768px e 480px. Queste query riducono la dimensione dei font e il padding della tabella per migliorare la leggibilità su dispositivi più piccoli.
+Le dimensioni dei font e il padding degli elementi sono stati regolati per adattarsi meglio a schermi di diverse dimensioni.
+Stili del pulsante: Ho reso il pulsante più adattabile, con una larghezza del 100% per dispositivi mobili, che si riduce anche nel font size a seconda della larghezza dello schermo.
+
+Con queste modifiche, la tabella sarà più facile da leggere su dispositivi mobili, e il layout sarà più fluido per schermi di diverse dimensioni.
+
+
+Hai detto:
+fammi uno style migliore per le celle di selezione della tabella
+ChatGPT ha detto:
+ChatGPT
+Per migliorare lo stile delle celle di selezione della tabella e renderle più interattive, possiamo aggiungere diversi effetti visivi, come il cambiamento del colore al passaggio del mouse, l'uso di bordi arrotondati, e un'ombra leggera per dare un aspetto più moderno. Inoltre, possiamo aggiungere anche l'effetto di selezione per i dispositivi mobili e desktop, che può essere attivato al clic o al passaggio del mouse.
+
+Ecco un miglioramento completo per le celle della tabella:
+
+html
+Copia codice
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizzazione Orari di Lavoro</title>
+    <p id="settimana-info">Settimana dal <span id="inizio-settimana"></span> al <span id="fine-settimana"></span> di <span id="mese-anno"></span></p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        /* Tabella */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            overflow-x: auto;
+            display: block;
+            white-space: nowrap;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1rem;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            font-size: 1rem;
+            color: #333;
+            border-radius: 5px;
+        }
+
+        td:hover {
+            background-color: #e2f7e2;  /* Leggero verde chiaro al passaggio del mouse */
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Aggiungi un'ombra per evidenziare */
+        }
+
+        td:active {
+            background-color: #d3f5d3; /* Colore più scuro durante il clic */
+            transform: scale(0.98);  /* Leggero effetto di riduzione al clic */
+        }
+
+        td.selected {
+            background-color: #81C784;  /* Colore verde chiaro quando selezionato */
+            color: white;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsività per schermi più piccoli */
+        @media screen and (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            table {
+                width: 100%;
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            table {
+                font-size: 0.7rem;
+            }
+
+            th, td {
+                padding: 5px;
+            }
+
+            button {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">Orari di Lavoro Settimanali</h1>
+
+    <h2>Tabella degli Orari</h2>
+    <table id="tabellaOrari">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- I dati della tabella andranno qui -->
+        </tbody>
+    </table>
+
+    <button onclick="window.location.href = 'index.html';">Torna alla pagina principale</button>
+</div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
+Modifiche principali:
+Celle della tabella più interattive:
+
+td:hover: Quando l'utente passa il mouse su una cella, il colore di sfondo cambia leggermente in un verde chiaro (#e2f7e2), dando un effetto visivo di interazione. Inoltre, c'è un'ombra leggera (box-shadow) per un effetto di sollevamento.
+td:active: Quando una cella viene cliccata, il colore diventa un verde più scuro (#d3f5d3), e viene aggiunto un effetto di riduzione delle dimensioni (transform: scale(0.98)), per dare un effetto di "pressione".
+td.selected: Quando una cella viene selezionata (ad esempio, cliccando su di essa), il colore di sfondo cambia in un verde chiaro (#81C784) con testo bianco. Questo effetto di selezione può essere attivato tramite JavaScript.
+Aggiunta di transizioni:
+
+Le transizioni sono state aggiunte sia per l'hover che per l'azione di clic sulle celle (transition: all 0.3s ease), rendendo gli effetti visivi più morbidi e fluidi.
+Miglioramenti del design per le dimensioni e i bordi:
+
+Le celle ora hanno un bordo arrotondato (border-radius: 5px) per dare un aspetto più moderno e amichevole.
+Media Query:
+
+Le dimensioni della tabella e il padding delle celle si adattano in base alle dimensioni dello schermo per garantire che la visualizzazione sia ottimale su tutti i dispositivi, inclusi desktop, tablet e smartphone.
+Come funziona la selezione:
+Per far sì che le celle vengano effettivamente "selezionate" quando vengono cliccate, dovrai aggiungere un po' di JavaScript per gestire la selezione. Puoi aggiungere il seguente script nel tuo file script1.js:
+
+javascript
+Copia codice
+// Aggiungi la classe 'selected' alla cella quando viene cliccata
+document.querySelectorAll("td").forEach(cell => {
+    cell.addEventListener("click", function() {
+        this.classList.toggle("selected"); // Cambia la classe per selezionare o deselezionare
+    });
+});
+Con queste modifiche, le celle della tabella saranno non solo visivamente più attraenti, ma anche più funzionali e interattive.
+
+
+Hai detto:
+ti passo il codice e vorrei che mi facessi lo styling delle celle di selezione della tabella piu belle
+ChatGPT ha detto:
+ChatGPT
+Certo, puoi inviarmi il codice HTML e CSS che stai utilizzando, e sarò felice di aiutarti a migliorare lo stile delle celle di selezione della tabella per renderle più belle e interattive. Aspetto il tuo codice!
+
+
+Hai detto:
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Orari Lavoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">
+        Gestione Orari di Lavoro Settimanali 
+        <span id="giorniSettimana"></span>
+    </h1>
+
+    <div>
+        <label for="nomeDipendente">Nome Dipendente: </label>
+        <input type="text" id="nomeDipendente" placeholder="Inserisci nome dipendente">
+        
+        <button onclick="aggiungiDipendente()">Aggiungi Dipendente</button>
+    </div>
+
+    <h2>Orari Settimanali</h2>
+    <p id="settimana-info">Settimana dal <span id="inizio-settimana"></span> al <span id="fine-settimana"></span> di <span id="mese-anno"></span></p>
+    <table id="tabellaOrari">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+                <th>Sabato</th>
+                <th>Domenica</th>
+				<th>Elimina</th> <!-- Colonna per il pulsante di eliminazione -->
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button onclick="memorizzaDatib()">Memorizza Dati</button>
+	
+	<button id="resetButton">Reset Dati</button>
+	
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+ChatGPT ha detto:
+ChatGPT
+Per migliorare lo stile delle celle di selezione della tabella e renderle più eleganti, possiamo aggiungere effetti interattivi, come il cambiamento di colore al passaggio del mouse, un'animazione per la selezione e l'uso di colori più accattivanti. Ecco una proposta di styling CSS per le celle della tua tabella:
+
+CSS migliorato per la selezione delle celle della tabella:
+css
+Copia codice
+/* Stile base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Stile per il titolo e i pulsanti */
+h2, p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tabella Orari */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Effetto hover sulle celle */
+td:hover {
+    background-color: #e2f7e2; /* Colore chiaro di hover */
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
+    transform: scale(1.05); /* Effetto di zoom */
+}
+
+/* Effetto al click */
+td:active {
+    background-color: #c8e6c9; /* Colore scuro durante il clic */
+    transform: scale(0.98); /* Piccola compressione durante il clic */
+}
+
+/* Cella selezionata */
+td.selected {
+    background-color: #81C784;  /* Colore verde chiaro per la selezione */
+    color: white;
+    font-weight: bold;
+}
+
+/* Sezione Reset Dati */
+#resetButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+}
+
+#resetButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsività per schermi più piccoli */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    #resetButton {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    #resetButton {
+        width: 20%;
+    }
+}
+Dettagli delle modifiche:
+Celle della tabella:
+
+Effetto di hover (td:hover): Le celle cambiano colore al passaggio del mouse, diventando di un verde più chiaro (#e2f7e2). Inoltre, viene aggiunta un'ombra e un effetto di zoom per rendere la cella più "interattiva" e visibile.
+Effetto di clic (td:active): Quando una cella viene cliccata, il colore di sfondo cambia a un verde più scuro (#c8e6c9), e c'è un effetto di compressione che dà l'impressione di essere premuto.
+Cella selezionata (td.selected): Quando una cella è selezionata, cambia colore di sfondo in un verde più marcato (#81C784), con testo bianco per evidenziarla.
+Bottone "Memorizza Dati" e "Reset Dati":
+
+I pulsanti sono stilizzati con un colore di sfondo verde e rosso, rispettivamente per azioni di salvataggio e reset. Quando si passa sopra con il mouse, cambia leggermente il colore per dare un effetto visivo di interazione.
+Responsività:
+
+Per dispositivi più piccoli, le dimensioni dei font, il padding delle celle e dei pulsanti sono stati adattati per garantire che la tabella e i pulsanti non diventino troppo grandi su schermi piccoli.
+JavaScript per la selezione delle celle:
+Per aggiungere la funzionalità di selezione delle celle, puoi usare il seguente codice JavaScript (da aggiungere nel file script.js):
+
+javascript
+Copia codice
+// Aggiungi la classe 'selected' alla cella quando viene cliccata
+document.querySelectorAll("td").forEach(cell => {
+    cell.addEventListener("click", function() {
+        // Toglia la selezione dalle altre celle
+        document.querySelectorAll("td").forEach(c => c.classList.remove("selected"));
+        // Aggiungi la classe 'selected' alla cella cliccata
+        this.classList.add("selected");
+    });
+});
+Con queste modifiche, la tabella avrà un aspetto più moderno e interattivo, migliorando l'esperienza dell'utente.
+
+
+Hai detto:
+invece per le caselle di scelta tra mattina sera o riposo?
+ChatGPT ha detto:
+ChatGPT
+Per le caselle di scelta (come quelle per "Mattina", "Sera" o "Riposo") che vuoi inserire nella tabella, possiamo creare uno stile che renda queste caselle eleganti e facilmente selezionabili. Puoi usare elementi di selezione (<select>) e opzioni (<option>) per rappresentare queste scelte. Per migliorare l'interattività e l'estetica, possiamo aggiungere un design personalizzato e degli effetti visivi, come il cambio di colore al passaggio del mouse, bordi arrotondati, e transizioni fluide.
+
+Ecco una proposta di miglioramento per le caselle di scelta:
+HTML - Aggiungi le caselle di selezione nella tabella
+Nel corpo della tabella, sostituisci le celle relative ai giorni con delle caselle di selezione (<select>):
+
+html
+Copia codice
+<tbody>
+    <tr>
+        <td>Nome Dipendente</td>
+        <td><select class="scelta-giorno">
+                <option value="mattina">Mattina</option>
+                <option value="sera">Sera</option>
+                <option value="riposo">Riposo</option>
+            </select>
+        </td>
+        <td><select class="scelta-giorno">
+                <option value="mattina">Mattina</option>
+                <option value="sera">Sera</option>
+                <option value="riposo">Riposo</option>
+            </select>
+        </td>
+        <!-- Ripeti per gli altri giorni... -->
+    </tr>
+</tbody>
+CSS - Styling per le caselle di scelta
+Adesso aggiungiamo uno stile elegante per le caselle di selezione. Possiamo anche fare in modo che quando l'utente interagisce con queste, vengano evidenziate in modo visibile.
+
+css
+Copia codice
+/* Styling base per le caselle di scelta */
+select.scelta-giorno {
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Cambia il colore di sfondo e bordi quando la casella è attiva */
+select.scelta-giorno:focus {
+    border-color: #4CAF50;
+    background-color: #f1f8f5;
+}
+
+/* Effetto hover sulle caselle di selezione */
+select.scelta-giorno:hover {
+    border-color: #45a049;
+    background-color: #e8f5e9;
+}
+
+/* Stile per le opzioni */
+option {
+    padding: 8px 10px;
+    font-size: 1rem;
+}
+
+/* Aggiungi un'ombra per dare un effetto 3D alle caselle */
+select.scelta-giorno:focus, select.scelta-giorno:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 #resetButton {
     position: fixed;
     bottom: 20px;
