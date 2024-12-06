@@ -1,19 +1,32 @@
+/* Corpo della pagina */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Font moderno e pulito */
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
 
+/* Contenitore principale */
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Ombra per il contenitore */
 }
 
+/* Titolo della pagina */
 .header {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiungi ombra al testo */
+    animation: fadeIn 1s ease-out; /* Animazione per far apparire il testo */
 }
 
 /* Tabella */
@@ -26,63 +39,75 @@ table {
     white-space: nowrap;
 }
 
-th, td {
+/* Intestazione della tabella */
+th {
     padding: 15px;
     text-align: center;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease;
-}
-
-th {
     background-color: #4CAF50;
     color: white;
     font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
+/* Celle della tabella */
 td {
+    padding: 15px;
+    text-align: center;
     background-color: #f9f9f9;
     font-size: 1rem;
     color: #333;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Transizione per effetto hover */
 }
 
+/* Effetto hover sulle celle */
 td:hover {
-    background-color: #e2f7e2;  /* Leggero verde chiaro al passaggio del mouse */
+    background-color: #e2f7e2;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Aggiungi un'ombra per evidenziare */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Effetto attivo sul clic */
 td:active {
-    background-color: #d3f5d3; /* Colore più scuro durante il clic */
-    transform: scale(0.98);  /* Leggero effetto di riduzione al clic */
+    background-color: #d3f5d3;
+    transform: scale(0.98); /* Leggero effetto di riduzione */
 }
 
+/* Celle selezionate */
 td.selected {
-    background-color: #81C784;  /* Colore verde chiaro quando selezionato */
+    background-color: #81C784;
     color: white;
 }
 
+/* Pulsante principale */
 button {
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 1rem;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover sul pulsante */
 button:hover {
     background-color: #45a049;
+    transform: translateY(-3px); /* Solleva il pulsante al passaggio del mouse */
 }
 
-/* Responsività per schermi più piccoli */
+/* Media Query per schermi più piccoli */
 @media screen and (max-width: 1024px) {
     .container {
-        padding: 15px;
+        padding: 25px;
     }
 
     table {
@@ -91,12 +116,12 @@ button:hover {
     }
 
     th, td {
-        padding: 8px;
+        padding: 12px;
     }
 
     button {
-        font-size: 0.9rem;
-        padding: 12px;
+        font-size: 1rem;
+        padding: 15px;
     }
 }
 
@@ -104,6 +129,20 @@ button:hover {
     table {
         width: 100%;
         font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        font-size: 0.7rem;
     }
 
     th, td {
@@ -115,16 +154,14 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 480px) {
-    table {
-        font-size: 0.7rem;
+/* Animazione per il fade-in del titolo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-
-    th, td {
-        padding: 5px;
-    }
-
-    button {
-        font-size: 0.8rem;
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
