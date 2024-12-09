@@ -75,6 +75,44 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Stile per la sezione info settimana */
+#sezione-info {
+    background-color: #f4f9f4;  /* Un colore di sfondo chiaro */
+    padding: 20px;
+    border-radius: 10px;  /* Angoli arrotondati per un aspetto più moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra leggera per far risaltare la sezione */
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sezione-info span {
+    font-weight: bold;
+    color: #4CAF50;  /* Un colore verde per far risaltare i dati */
+}
+
+#sezione-info p {
+    margin: 10px 0;
+    color: #333;  /* Colore del testo principale */
+}
+
+#sezione-info p span {
+    color: #81C784;  /* Un verde chiaro per le informazioni importanti */
+}
+
+#sezione-info .info-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;  /* Titolo in colore scuro */
+    margin-bottom: 10px;
+}
+
+#sezione-info .info-date {
+    font-size: 1rem;
+    color: #4CAF50;  /* Verde per le date */
+}
+
 /* Tabella Orari */
 table {
     width: 100%;
