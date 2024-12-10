@@ -57,7 +57,7 @@ h2 {
 /* Paragrafi */
 p, label {
     font-size: 1.1rem;
-    color: #555;
+    color: #000000;
     line-height: 1.6;
     text-align: center;
 }
@@ -83,6 +83,30 @@ button {
 button:hover {
     background-color: #9845a0;
 }
+  
+  .inputdipendenti label {
+    transform: translateY(-50%);
+    color: #d60000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  
+  .inputdipendenti input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #ffffff;
+  }
+  
+  .inputdipendenti ion-icon {
+    color: #fff;
+    font-size: 1.2em;
+  }
 
 /* Stile per la sezione info settimana */
 #sezione-info {
