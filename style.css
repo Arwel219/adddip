@@ -1,21 +1,17 @@
 /* Corpo della pagina */
 body {
     font-family: 'Poppins', Arial, sans-serif; /* Font personalizzato */
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url("/.bg.jpg") no-repeat;
+    background: url("bg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-  }
+    margin: 0;
+    padding: 20px;
+}
 
 .container {
     width: 90%;
@@ -25,6 +21,8 @@ section {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: transparent;
+    backdrop-filter: blur(3px);
 }
 
 .header {
@@ -88,7 +86,8 @@ button:hover {
 
 /* Stile per la sezione info settimana */
 #sezione-info {
-    background-color: #f9f4f8;  /* Un colore di sfondo chiaro */
+    background: transparent;
+    backdrop-filter: blur(3px);
     padding: 20px;
     border-radius: 10px;  /* Angoli arrotondati per un aspetto più moderno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra leggera per far risaltare la sezione */
@@ -149,8 +148,9 @@ th {
 }
 
 td {
-    background-color: #f9f9f9;
-    color: #333;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    color: #5a12cf;
     font-size: 1.1rem;
     font-weight: 400;
     border-radius: 8px;
@@ -159,7 +159,7 @@ td {
 
 /* Effetto hover sulle celle */
 td:hover {
-    background-color: #f7e2e2; /* Colore chiaro di hover */
+    background-color: #f7e2e29a; /* Colore chiaro di hover */
     cursor: pointer;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     transform: scale(1.05); /* Effetto di zoom */
@@ -167,13 +167,13 @@ td:hover {
 
 /* Effetto al click */
 td:active {
-    background-color: #e6c8e6; /* Colore scuro durante il clic */
+    background-color: #e6c8e6a6; /* Colore scuro durante il clic */
     transform: scale(0.98); /* Piccola compressione durante il clic */
 }
 
 /* Cella selezionata */
 td.selected {
-    background-color: #a281c7;  /* Colore verde chiaro per la selezione */
+    background-color: #a281c7a1;  /* Colore verde chiaro per la selezione */
     color: white;
     font-weight: bold;
 }
@@ -213,7 +213,8 @@ select.scelta-giorno {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    background: transparent;
+    backdrop-filter: blur(3px);
     color: #333;
     transition: border-color 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
