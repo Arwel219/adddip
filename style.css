@@ -6,6 +6,17 @@ body {
     padding: 20px;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("/.bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -27,7 +38,7 @@ body {
 h1.header {
     text-align: center;
     font-size: 2.5rem;
-    color: #4CAF50;
+    color: #f00606;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px; /* Aggiunge una distanza tra le lettere */
@@ -58,7 +69,7 @@ button {
     display: block;
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #904caf;
     color: white;
     border: none;
     border-radius: 5px;
@@ -72,12 +83,12 @@ button {
 
 
 button:hover {
-    background-color: #45a049;
+    background-color: #9845a0;
 }
 
 /* Stile per la sezione info settimana */
 #sezione-info {
-    background-color: #f4f9f4;  /* Un colore di sfondo chiaro */
+    background-color: #f9f4f8;  /* Un colore di sfondo chiaro */
     padding: 20px;
     border-radius: 10px;  /* Angoli arrotondati per un aspetto più moderno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Ombra leggera per far risaltare la sezione */
@@ -89,7 +100,7 @@ button:hover {
 
 #sezione-info span {
     font-weight: bold;
-    color: #4CAF50;  /* Un colore verde per far risaltare i dati */
+    color: #af4caf;  /* Un colore verde per far risaltare i dati */
 }
 
 #sezione-info p {
@@ -98,7 +109,7 @@ button:hover {
 }
 
 #sezione-info p span {
-    color: #81C784;  /* Un verde chiaro per le informazioni importanti */
+    color: #ff00b3;  /* Un verde chiaro per le informazioni importanti */
 }
 
 #sezione-info .info-title {
@@ -110,7 +121,7 @@ button:hover {
 
 #sezione-info .info-date {
     font-size: 1rem;
-    color: #4CAF50;  /* Verde per le date */
+    color: #ff0202;  /* Verde per le date */
 }
 
 /* Tabella Orari */
@@ -130,7 +141,7 @@ th, td {
 
 /* Stile del testo per la tabella */
 th {
-    background-color: #4CAF50;
+    background-color: #a00404;
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
@@ -148,7 +159,7 @@ td {
 
 /* Effetto hover sulle celle */
 td:hover {
-    background-color: #e2f7e2; /* Colore chiaro di hover */
+    background-color: #f7e2e2; /* Colore chiaro di hover */
     cursor: pointer;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Leggera ombra */
     transform: scale(1.05); /* Effetto di zoom */
@@ -156,13 +167,13 @@ td:hover {
 
 /* Effetto al click */
 td:active {
-    background-color: #c8e6c9; /* Colore scuro durante il clic */
+    background-color: #e6c8e6; /* Colore scuro durante il clic */
     transform: scale(0.98); /* Piccola compressione durante il clic */
 }
 
 /* Cella selezionata */
 td.selected {
-    background-color: #81C784;  /* Colore verde chiaro per la selezione */
+    background-color: #a281c7;  /* Colore verde chiaro per la selezione */
     color: white;
     font-weight: bold;
 }
@@ -210,13 +221,13 @@ select.scelta-giorno {
 
 /* Cambia il colore di sfondo e bordi quando la casella è attiva */
 select.scelta-giorno:focus {
-    border-color: #4CAF50;
+    border-color: #af4c4c;
     background-color: #f1f8f5;
 }
 
 /* Effetto hover sulle caselle di selezione */
 select.scelta-giorno:hover {
-    border-color: #45a049;
+    border-color: #a04545;
     background-color: #e8f5e9;
 }
 
@@ -237,7 +248,7 @@ select.scelta-giorno:focus, select.scelta-giorno:hover {
     bottom: 20px;
     left: 20px;
     padding: 12px 25px;
-    background-color: #f44336;
+    background-color: #3649f4;
     color: white;
     border: none;
     border-radius: 5px;
@@ -268,7 +279,7 @@ button:hover, #resetButton:hover {
     text-align: center;
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #4CAF50;
+    color: #7a4caf;
 }
 
 /* Responsività per schermi più piccoli */
