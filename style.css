@@ -309,9 +309,6 @@ button:hover, #resetButton:hover {
 
 /* Responsività per schermi più piccoli */
 @media screen and (max-width: 1024px) {
-    body {
-        width: 100%;
-    }
 
     .container {
         padding: 20px;
@@ -337,9 +334,6 @@ button:hover, #resetButton:hover {
 
 /* Responsività per schermi molto piccoli, come i dispositivi mobili */
 @media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
 
     .container {
         padding: 15px;
