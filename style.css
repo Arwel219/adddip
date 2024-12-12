@@ -267,6 +267,10 @@ select.scelta-giorno:focus, select.scelta-giorno:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#nome {
+    position: sticky;
+}
+
 /* Scrittura per il reset e memorizzazione */
 #resetButton {
     position: relative;
