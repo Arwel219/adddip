@@ -269,9 +269,9 @@ select.scelta-giorno:focus, select.scelta-giorno:hover {
 
 /* Scrittura per il reset e memorizzazione */
 #resetButton {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
+    position: relative;
+    bottom: -20px;
+    left: -10px;
     padding: 12px 25px;
     background-color: #3649f4;
     color: white;
@@ -329,6 +329,10 @@ button:hover, #resetButton:hover {
 
     th, td {
         padding: 10px;
+    }
+
+    #resetButton {
+        width: 14%;
     }
 }
 
