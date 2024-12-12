@@ -267,10 +267,6 @@ select.scelta-giorno:focus, select.scelta-giorno:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#nome {
-    position: sticky;
-}
-
 /* Scrittura per il reset e memorizzazione */
 #resetButton {
     position: relative;
@@ -338,6 +334,11 @@ button:hover, #resetButton:hover {
     #resetButton {
         width: 14%;
     }
+
+    #nome {
+        position: sticky;
+    }    
+
 }
 
 /* Responsività per schermi molto piccoli, come i dispositivi mobili */
@@ -371,6 +372,11 @@ button:hover, #resetButton:hover {
     #resetButton {
         width: 30%;
     }
+
+    #nome {
+        position: sticky;
+    }    
+
 }
 
 /* Ulteriore responsività per schermi molto piccoli, come i telefoni */
@@ -390,4 +396,9 @@ button:hover, #resetButton:hover {
     #resetButton {
         width: 40%;
     }
+
+    #nome {
+        position: sticky;
+    }    
+
 }
