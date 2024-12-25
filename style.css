@@ -217,16 +217,6 @@ td.selected {
     background-color: #d32f2f;
 }
 
-// Aggiungi la classe 'selected' alla cella quando viene cliccata
-document.querySelectorAll("td").forEach(cell => {
-    cell.addEventListener("click", function() {
-        // Toglia la selezione dalle altre celle
-        document.querySelectorAll("td").forEach(c => c.classList.remove("selected"));
-        // Aggiungi la classe 'selected' alla cella cliccata
-        this.classList.add("selected");
-    });
-});
-
 /* Styling base per le caselle di scelta */
 select.scelta-giorno {
     width: 100%;
