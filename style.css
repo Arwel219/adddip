@@ -322,7 +322,7 @@ button:hover, #resetButton:hover {
         width: 14%;
     }
 
-  /* Rendi il td con classe "nome" sticky */
+    /* Rendi il td con classe "nome" sticky */
     td.nome {
         position: sticky;
         left: 0;
@@ -330,7 +330,16 @@ button:hover, #resetButton:hover {
         z-index: 2; /* Assicurati che sia sopra gli altri elementi */
   }
 
-}
+    /* Rendi anche il th sticky, se necessario */
+    th.nome {
+        position: sticky;
+        left: 0;
+        background-color: #f4f4f4; /* Un colore diverso per il header */
+        z-index: 3;
+      }
+    } 
+
+
 
 /* Responsività per schermi molto piccoli, come i dispositivi mobili */
 @media screen and (max-width: 768px) {
@@ -364,7 +373,7 @@ button:hover, #resetButton:hover {
         width: 30%;
     }
 
-  /* Rendi il td con classe "nome" sticky */
+    /* Rendi il td con classe "nome" sticky */
     td.nome {
         position: sticky;
         left: 0;
@@ -372,8 +381,16 @@ button:hover, #resetButton:hover {
         z-index: 2; /* Assicurati che sia sopra gli altri elementi */
 }
 
-
+    /* Rendi anche il th sticky, se necessario */
+    th.nome {
+        position: sticky;
+        left: 0;
+        background-color: #f4f4f4; /* Un colore diverso per il header */
+        z-index: 3;
+  }
 }
+
+
 
 /* Ulteriore responsività per schermi molto piccoli, come i telefoni */
 @media screen and (max-width: 480px) {
@@ -401,4 +418,12 @@ button:hover, #resetButton:hover {
         z-index: 2; /* Assicurati che sia sopra gli altri elementi */
 }
 
+  /* Rendi anche il th sticky, se necessario */
+    th.nome {
+       position: sticky;
+       left: 0;
+       background-color: #f4f4f4; /* Un colore diverso per il header */
+       z-index: 3;
+  }
 }
+
