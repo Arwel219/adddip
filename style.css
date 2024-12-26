@@ -120,7 +120,7 @@ button:hover {
 
 #sezione-info span {
     font-weight: bold;
-    color: #af4caf;  /* Un colore verde per far risaltare i dati */
+    color: #af4caf;  /* Un colore per far risaltare i dati */
 }
 
 #sezione-info p {
@@ -129,7 +129,7 @@ button:hover {
 }
 
 #sezione-info p span {
-    color: #ff00b3;  /* Un verde chiaro per le informazioni importanti */
+    color: #ff00b3;  /* Un colore per le informazioni importanti */
 }
 
 #sezione-info .info-title {
@@ -194,7 +194,7 @@ td:active {
 
 /* Cella selezionata */
 td.selected {
-    background-color: #a281c7a1;  /* Colore verde chiaro per la selezione */
+    background-color: #a281c7a1;  /* Colore chiaro per la selezione */
     color: white;
     font-weight: bold;
 }
@@ -322,9 +322,13 @@ button:hover, #resetButton:hover {
         width: 14%;
     }
 
-    #nome {
+  /* Rendi il td con classe "nome" sticky */
+    td.nome {
         position: sticky;
-    }    
+        left: 0;
+        background-color: #fff; /* Per evitare che si sovrapponga al contenuto */
+        z-index: 2; /* Assicurati che sia sopra gli altri elementi */
+  }
 
 }
 
@@ -360,9 +364,14 @@ button:hover, #resetButton:hover {
         width: 30%;
     }
 
-    #nome {
+  /* Rendi il td con classe "nome" sticky */
+    td.nome {
         position: sticky;
-    }    
+        left: 0;
+        background-color: #fff; /* Per evitare che si sovrapponga al contenuto */
+        z-index: 2; /* Assicurati che sia sopra gli altri elementi */
+}
+
 
 }
 
@@ -384,8 +393,12 @@ button:hover, #resetButton:hover {
         width: 40%;
     }
 
-    #nome {
+  /* Rendi il td con classe "nome" sticky */
+    td.nome {
         position: sticky;
-    }    
+        left: 0;
+        background-color: #fff; /* Per evitare che si sovrapponga al contenuto */
+        z-index: 2; /* Assicurati che sia sopra gli altri elementi */
+}
 
 }
