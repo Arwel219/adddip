@@ -334,7 +334,7 @@ button:hover, #resetButton:hover {
     th.nome {
         position: sticky;
         left: 0;
-        background-color: #f4f4f4; /* Un colore diverso per il header */
+        background-color: #a00404; /* Un colore diverso per il header */
         z-index: 3;
       }
     } 
@@ -385,7 +385,7 @@ button:hover, #resetButton:hover {
     th.nome {
         position: sticky;
         left: 0;
-        background-color: #f4f4f4; /* Un colore diverso per il header */
+        background-color: #a00404; /* Un colore diverso per il header */
         z-index: 3;
   }
 }
@@ -422,7 +422,7 @@ button:hover, #resetButton:hover {
     th.nome {
        position: sticky;
        left: 0;
-       background-color: #f4f4f4; /* Un colore diverso per il header */
+       background-color: #a00404; /* Un colore diverso per il header */
        z-index: 3;
   }
 }
