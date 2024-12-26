@@ -326,7 +326,6 @@ button:hover, #resetButton:hover {
     td.nome {
         position: sticky;
         left: 0;
-        background-color: #fff; /* Per evitare che si sovrapponga al contenuto */
         z-index: 2; /* Assicurati che sia sopra gli altri elementi */
   }
 
@@ -377,7 +376,6 @@ button:hover, #resetButton:hover {
     td.nome {
         position: sticky;
         left: 0;
-        background-color: #fff; /* Per evitare che si sovrapponga al contenuto */
         z-index: 2; /* Assicurati che sia sopra gli altri elementi */
 }
 
@@ -414,7 +412,6 @@ button:hover, #resetButton:hover {
     td.nome {
         position: sticky;
         left: 0;
-        background-color: #fff; /* Per evitare che si sovrapponga al contenuto */
         z-index: 2; /* Assicurati che sia sopra gli altri elementi */
 }
 
