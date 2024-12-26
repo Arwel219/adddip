@@ -74,6 +74,7 @@
 
                 let cell = row.insertCell(0);
                 cell.textContent = dipendente.nome;
+                cell.classList.add("nome"); // Aggiungi la classe 'nome'
 
                 // Crea le celle per ogni giorno della settimana
                 for (let i = 0; i < 7; i++) {
